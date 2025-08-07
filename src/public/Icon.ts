@@ -11,7 +11,8 @@ import lastIcon from "@/public/icons/lastIcon.svg";
 import message from "@/public/icons/message.svg";
 import phone from "@/public/icons/phone.svg";
 import arrowDown from "@/public/icons/arrowDown.svg";
-import rightArrow from "@/public/icons/rightArrow.svg"
+import rightArrow from "@/public/icons/rightArrow.svg";
+import linkIcon from "@/public/icons/linkIcon.svg"
 
 export {
     git,
@@ -27,5 +28,6 @@ export {
     message,
     phone,
     arrowDown,
-    rightArrow
+    rightArrow,
+    linkIcon
 }

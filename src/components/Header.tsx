@@ -10,7 +10,7 @@ const Header = () => {
 
 
   return (
-    <div className='w-full h-[56px] dark:bg-[#0F172B] dark:text-[#F8FAFC] font-medium border-2 border-[#90A1B9] flex items-center justify-between font-fira-code'>
+    <div className='w-full h-[56px] dark:bg-[#0F172B] text-[#F8FAFC] font-medium border-2 border-[#90A1B9] flex items-center justify-between font-fira-code'>
         <div className='flex items-center w-[735px] h-[56px]'>
             <p className='w-[311px] h-full p-5 border-[#90A1B9]'>Samuel_Adebayo</p>
             <div className='flex items-center w-[424px] h-full justify-between'>

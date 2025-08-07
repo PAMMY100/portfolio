@@ -2,22 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Define light (default) theme colors */
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* Theme: Light & Dark (ShadCN + Your Previous Setup) */
 
-/* Define dark theme using `.dark` class (not prefers-color-scheme) */
-.dark {
-  --background: #314158;
-  --foreground: #ededed;
-}
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #171717;
 
-/* Apply the variables to body */
-body {
-  background-color: var(--background);
-  color: var(--foreground);
+    /* Add all other base variables here if needed... */
+  }
+
+  .dark {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+
+    /* Optional: Extend dark theme with ShadCN colors if needed */
+    --card: var(--background);
+    --card-foreground: var(--foreground);
+    --border: #1a1a1a;
+    --input: #1a1a1a;
+    --ring: #333333;
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
   font-family: var(--font-geist-sans, --font-fira-code, --font-inter, Arial), sans-serif;
   transition: background-color 0.3s, color 0.3s;
+}
+
 }

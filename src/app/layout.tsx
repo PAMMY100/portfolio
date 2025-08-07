@@ -38,7 +38,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} ${geistMono.variable} ${firaCode.variable} antialiased `}>
       <ThemeProvider>
-        <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors">
+        <div className="min-h-screen bg-[#0F172B] dark:bg-gray-900 transition-colors">
           <ThemeToggle />
           <Header />
           

@@ -1,7 +1,10 @@
+import ContactSidebar from "@/components/ContactSidebar"
 
 const page = () => {
   return (
-    <div>page</div>
+    <div className="text-[#F8FAFC] font-fira-code">
+        <ContactSidebar />
+    </div>
   )
 }
 
