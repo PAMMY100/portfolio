@@ -46,7 +46,7 @@ const Header = () => {
         <div className='w-[10%]'></div>
         <Link href="/contact" className='flex justify-end w-[200px] h-[full]'>
             <div className={`p-4 w-full h-full text-center border-[#90A1B9] border-l-2 cursor-pointer hover:border-b-4 hover:border-b-[#FFB86A] ${
-                      pathName === '/projects' ? 'border-b-4 border-b-[#FFB86A]' : ''}`}>_contact-me</div>
+                      pathName === '/contact' ? 'border-b-4 border-b-[#FFB86A]' : ''}`}>_contact-me</div>
         </Link>
     </div>
   )
