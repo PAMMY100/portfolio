@@ -20,6 +20,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { set } from "zod";
+import { useEffect } from "react";
 
 type ContactFormProps = {
     formdata: ContactFormData;
@@ -38,13 +39,20 @@ const ContactForm = ({formdata, setFormData}: ContactFormProps) => {
         }
     })
 
+    useEffect(() => {
+    const subscription = form.watch((values) => {
+        setFormData({
+            name: values.name ?? '',
+            email: values.email ?? '',
+            message: values.message ?? ''
+        }); // update only when values change
+    });
+    return () => subscription.unsubscribe();
+    }, [form, setFormData]);
+
     const onSubmit: Parameters<typeof form.handleSubmit>[0] = (data) => {
         console.log("Submitted: ", data)
-        setFormData({
-            name: data.name,
-            email: data.email,
-            message: data.message
-        })
+        setFormData(data)
         
         //Reset the form after submission
         form.reset()
@@ -97,7 +105,7 @@ const ContactForm = ({formdata, setFormData}: ContactFormProps) => {
           )}
         />
 
-        <Button type="submit" className="w-[152px] h-[40px] text-lg px-3 py-[10px] bg-[#314158]">Submit</Button>
+        <Button type="submit" className="max-w-[172px] h-[40px] text-lg px-3 py-[10px] bg-[#FFB86A] rounded-[10px] text-[#020618] hover:bg-[#f7cda0]">submit-message</Button>
       </form>
     </Form>
   )
