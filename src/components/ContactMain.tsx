@@ -1,7 +1,14 @@
 import React from 'react'
 import ContactForm from './ContactForm'
+import { useState } from "react";
+import { ContactFormData } from "@/lib/validation";
 
 const ContactMain = () => {
+    const [formdata, setFormData] = useState<ContactFormData>({
+        name: '',
+        email: '',
+        message: ''
+    })
 
   return (
         <section className='flex flex-1 mt-[48px] border-t-2 border-[#90A1B9] min-h-screen justify-around'>

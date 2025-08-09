@@ -19,8 +19,15 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { set } from "zod";
 
-const ContactForm = () => {
+type ContactFormProps = {
+    formdata: ContactFormData;
+    setFormData: (data: ContactFormData) => void;
+}
+
+
+const ContactForm = ({formdata, setFormData}: ContactFormProps) => {
 
     const form = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
@@ -33,7 +40,17 @@ const ContactForm = () => {
 
     const onSubmit: Parameters<typeof form.handleSubmit>[0] = (data) => {
         console.log("Submitted: ", data)
+        setFormData({
+            name: data.name,
+            email: data.email,
+            message: data.message
+        })
+        
+        //Reset the form after submission
+        form.reset()
     }
+
+    
 
     return (
     <Form {...form}>
@@ -47,7 +64,7 @@ const ContactForm = () => {
               <FormControl>
                 <Input placeholder="John Doe |" {...field} className="w-[400px] h-[58px] p-3 rounded-[8px] bg-[#020618] text-[#90A1B9]" />
               </FormControl>
-              <FormMessage />
+              <FormMessage className="text-lg text-red-600 !important"/>
             </FormItem>
           )}
         />
@@ -61,7 +78,7 @@ const ContactForm = () => {
               <FormControl>
                 <Input placeholder="John@example.com" {...field} className="w-[400px] h-[58px] p-3 rounded-[8px] bg-[#020618] text-[#90A1B9]" />
               </FormControl>
-              <FormMessage />
+              <FormMessage className="text-lg text-red-600 !important"/>
             </FormItem>
           )}
         />
@@ -75,7 +92,7 @@ const ContactForm = () => {
               <FormControl>
                 <Textarea placeholder="Your message here..." {...field} className="w-[400px] h-[160px] p-3 rounded-[8px] bg-[#020618] text-[#90A1B9]"/>
               </FormControl>
-              <FormMessage />
+              <FormMessage className="text-lg text-red-600 !important"/>
             </FormItem>
           )}
         />
