@@ -1,4 +1,5 @@
 import React from 'react'
+import BioContent from './BioContent'
 
 const Bio = () => {
   return (
@@ -10,7 +11,7 @@ const Bio = () => {
         <div className='flex gap-2 justify-around'>
             {/*Bio content*/}
             <div className='w-[45%] min-h-screen p-6 border-r-2 border-[#90A1B9]'>
-
+                <BioContent />
             </div>
             
             <div className='w-8 h-[10px] bg-[#62748E]' />

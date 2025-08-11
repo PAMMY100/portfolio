@@ -1,4 +1,5 @@
 import React from 'react'
+import InterestContent from './InterestContent'
 
 const Interests = () => {
   return (
@@ -10,7 +11,7 @@ const Interests = () => {
         <div className='flex gap-2 justify-around'>
             {/*Interest content*/}
             <div className='w-[45%] min-h-screen p-6 border-r-2 border-[#90A1B9]'>
-
+                <InterestContent />
             </div>
             
             <div className='w-8 h-[10px] bg-[#62748E]' />
