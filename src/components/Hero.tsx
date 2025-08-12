@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="relative z-10 flex flex-col lg:flex-row items-start justify-around px-10 lg:px-20 py-60 gap-10">
             <HeroText />
             <div className="w-full max-w-md aspect-square bg-[#314158] rounded-xl border border-cyan-700 shadow-2xl p-6 flex items-center justify-center">
-                {/* Game or animation can go here */}
+                {/*  animation can go here */}
                 <span className="text-gray-500">Game Box UI</span>
             </div>
         </div>

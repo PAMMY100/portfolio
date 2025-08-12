@@ -13,6 +13,11 @@ import phone from "@/public/icons/phone.svg";
 import arrowDown from "@/public/icons/arrowDown.svg";
 import rightArrow from "@/public/icons/rightArrow.svg";
 import linkIcon from "@/public/icons/linkIcon.svg"
+import code from "@/public/icons/code.svg";
+import design from "@/public/icons/design.svg";
+import idea from "@/public/icons/idea.svg";
+import concept from "@/public/icons/concept.svg";
+import test from "@/public/icons/test.svg";
 
 export {
     git,
@@ -29,5 +34,10 @@ export {
     phone,
     arrowDown,
     rightArrow,
-    linkIcon
+    linkIcon,
+    code,
+    design,
+    idea,
+    concept,
+    test
 }

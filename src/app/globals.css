@@ -34,6 +34,17 @@
   color: hsl(var(--foreground));
   font-family: var(--font-geist-sans, --font-fira-code, --font-inter, Arial), sans-serif;
   transition: background-color 0.3s, color 0.3s;
+
+}
 }
 
+.wrapper {
+  will-change: transform;
+}
+
+/* ensure the inline-block slide aligns correctly */
+.slide {
+  display: inline-block;
+  overflow: hidden; /* must hide the other items */
+  vertical-align: top;
 }
