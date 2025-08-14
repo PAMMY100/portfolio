@@ -1,5 +1,6 @@
 import React from 'react'
 import BioContent from './BioContent'
+import CodeSnippet from './CodeSnippet'
 
 const Bio = () => {
   return (
@@ -17,7 +18,9 @@ const Bio = () => {
             <div className='w-8 h-[10px] bg-[#62748E]' />
         
             {/*Code snippet*/}
-            <div className='w-[45%] min-h-screen p-6 border-l-2 border-r-2 border-[#90A1B9]'></div>
+            <div className='w-[45%] min-h-screen p-6 border-l-2 border-r-2 border-[#90A1B9]'>
+                <CodeSnippet />
+            </div>
             <div className='w-8 h-[10px] bg-[#62748E]' />
         </div>
     </div>

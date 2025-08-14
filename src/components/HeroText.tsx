@@ -34,7 +34,7 @@ const HeroText = () => {
   useEffect(() => {
     if (words.length <= 1 || itemHeight === 0) return;
 
-    const visibleMs = 3000; // how long each item stays visible
+    const visibleMs = 2200; // how long each item stays visible
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % words.length);
     }, visibleMs);

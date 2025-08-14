@@ -18,6 +18,25 @@ import design from "@/public/icons/design.svg";
 import idea from "@/public/icons/idea.svg";
 import concept from "@/public/icons/concept.svg";
 import test from "@/public/icons/test.svg";
+import android from "@/public/icons/android.svg";
+import apple from "@/public/icons/apple.svg";
+import appium from "@/public/icons/appium.svg";
+import cypress from "@/public/icons/cypress.svg";
+import github from "@/public/icons/github.svg";
+import javascript from "@/public/icons/javascript.svg"
+import mongodb from "@/public/icons/mongodb.svg";
+import nextjs from "@/public/icons/nextjs.svg";
+import postman from "@/public/icons/postman.svg";
+import python from "@/public/icons/python.svg";
+import react from "@/public/icons/react.svg";
+import selenium from "@/public/icons/selenium.svg";
+import sql from "@/public/icons/sql.svg";
+import testjs from "@/public/icons/testjs.svg";
+import typescript from "@/public/icons/typescript.svg";
+import postgresql from "@/public/icons/postgresql.svg";
+import details from "@/public/icons/details.svg";
+import star from "@/public/icons/star.svg";
+import ratedStars from "@/public/icons/ratedStars.svg";
 
 export {
     git,
@@ -39,5 +58,24 @@ export {
     design,
     idea,
     concept,
-    test
+    test,
+    android,
+    apple,
+    appium,
+    cypress,
+    github,
+    javascript,
+    mongodb,
+    nextjs,
+    postman,
+    python,
+    react,
+    selenium,
+    sql,
+    testjs,
+    typescript,
+    postgresql,
+    details,
+    star,
+    ratedStars
 }
