@@ -37,6 +37,9 @@ import postgresql from "@/public/icons/postgresql.svg";
 import details from "@/public/icons/details.svg";
 import star from "@/public/icons/star.svg";
 import ratedStars from "@/public/icons/ratedStars.svg";
+import projecttesting from "@/public/icons/projecttesting.svg";
+import projectcode from "@/public/icons/projectcode.svg"
+import direction from "@/public/icons/direction.svg"
 
 export {
     git,
@@ -77,5 +80,8 @@ export {
     postgresql,
     details,
     star,
-    ratedStars
+    ratedStars,
+    projectcode,
+    projecttesting,
+    direction
 }
