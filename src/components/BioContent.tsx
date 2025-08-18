@@ -13,7 +13,7 @@ const BioContent = () => {
         </div>
         <div className='flex gap-7 items-center'>
             <p>3</p>
-            <p>* QA Engineer with 4+ years of experience</p>
+            <p>* QA Engineer with 3+ years of experience</p>
         </div>
         <div className='flex gap-7 items-center'>
             <p>4</p>
