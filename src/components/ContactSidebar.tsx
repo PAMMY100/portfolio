@@ -1,5 +1,6 @@
 import { arrowDown, linkIcon, message, phone } from '@/public/Icon'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const ContactSidebar = () => {
@@ -23,14 +24,18 @@ const ContactSidebar = () => {
             <Image src={arrowDown} alt='arrow down'/>
             <h1>find-me-also-in</h1>
         </div>
-        <div className='flex flex-col gap-2 p-6 h-[80px]'>
-            <div className='flex gap-2'>
-                <Image src={linkIcon} alt='link Icon' />
-                <span>Github</span>
+        <div className='flex flex-col gap-3 p-6 h-[80px]'>
+            <div>
+                <Link href="https://github.com/PAMMY100" className='flex gap-2'>
+                    <Image src={linkIcon} alt='link Icon' />
+                    <span>Github</span>
+                </Link>
             </div>
-            <div className='flex gap-2'>
-                <Image src={linkIcon} alt='link Icon' />
-                <span>LinkedIn</span>
+            <div>
+                <Link href="https://www.linkedin.com/in/samuel-adebayo-57aaa618a/" className='flex gap-2'>
+                    <Image src={linkIcon} alt='link Icon' />
+                    <span>LinkedIn</span>
+                </Link>
             </div>
         </div>
     </div>

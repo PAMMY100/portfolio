@@ -4,6 +4,7 @@ import gather from "@/public/images/gather.jpg";
 import skill2ruraladmin from "@/public/images/skill2rural-admin.png";
 import skill2rural from "@/public/images/skill2rural.png"
 import ticketGenerator from "@/public/images/ticketGenerator.jpg"
+import harambee from "@/public/images/harambee.jpg"
 
 export const words = [
     { text: "Idea", icon: idea},
@@ -61,5 +62,16 @@ export const projectsData = [
         "stack": "React, Tailwind",
         "img": ticketGenerator,
         "url": "https://ticket-generator-lovat.vercel.app/"
+    }
+]
+
+
+export const testingProject = [
+    {
+        "name": "Harambee",
+        "description": "Harambee is a mobile and web platform connecting childcare providers with families, enabling registration, verification, availability scheduling, service bookings, communication, and learning/certification.",
+        "stack": "Postman, Appium, K6, browserStack",
+        "img": harambee,
+        "url": "https://myharambee.com/"
     }
 ]

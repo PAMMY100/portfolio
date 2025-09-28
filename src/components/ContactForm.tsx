@@ -22,6 +22,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { set } from "zod";
 import { useEffect, useState } from "react";
 import MessageConfirmation from "./MessageConfirmation";
+import { sendEmail } from "@/lib/resend";
 
 type ContactFormProps = {
     formdata: ContactFormData;
@@ -52,14 +53,18 @@ const ContactForm = ({formdata, setFormData}: ContactFormProps) => {
     return () => subscription.unsubscribe();
     }, [form, setFormData]);
 
-    const onSubmit: Parameters<typeof form.handleSubmit>[0] = (data) => {
+    const onSubmit: Parameters<typeof form.handleSubmit>[0] = async (data) => {
         console.log("Submitted: ", data)
         setFormData(data)
-        setShowConfirmation(true);
-        //Reset the form after submission
-        form.reset()
-        
-        console.log(showConfirmation)
+
+        const res = await sendEmail(data);
+
+        if (res.success) {
+            setShowConfirmation(true);
+            form.reset()
+        } else {
+            alert("Something went wrong while sending your message. Please try again.")
+        }
     }
 
     
