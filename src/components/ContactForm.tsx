@@ -73,7 +73,7 @@ const ContactForm = ({formdata, setFormData}: ContactFormProps) => {
         <>
         {showConfirmation ? ( <MessageConfirmation showConfirmation={showConfirmation} setShowConfirmation={setShowConfirmation}/> ) : (
             <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+                <form onSubmit={form.handleSubmit(onSubmit)} className="p-6 space-y-8">
                 <FormField
                 control={form.control}
                 name="name"
@@ -81,7 +81,7 @@ const ContactForm = ({formdata, setFormData}: ContactFormProps) => {
                     <FormItem>
                     <FormLabel className="text-lg">_name:</FormLabel>
                     <FormControl>
-                        <Input placeholder="John Doe |" {...field} className="w-[400px] h-[58px] p-3 rounded-[8px] bg-[#020618] text-[#90A1B9]" />
+                        <Input placeholder="John Doe |" {...field} className="w-[250px] md:w-[400px] h-[58px] p-3 rounded-[8px] bg-[#020618] text-[#90A1B9]" />
                     </FormControl>
                     <FormMessage className="text-lg text-red-600 !important"/>
                     </FormItem>
@@ -95,7 +95,7 @@ const ContactForm = ({formdata, setFormData}: ContactFormProps) => {
                     <FormItem>
                     <FormLabel className="text-lg">_email:</FormLabel>
                     <FormControl>
-                        <Input placeholder="John@example.com" {...field} className="w-[400px] h-[58px] p-3 rounded-[8px] bg-[#020618] text-[#90A1B9]" />
+                        <Input placeholder="John@example.com" {...field} className="w-[250px] md:w-[400px] h-[58px] p-3 rounded-[8px] bg-[#020618] text-[#90A1B9]" />
                     </FormControl>
                     <FormMessage className="text-lg text-red-600 !important"/>
                     </FormItem>
@@ -109,14 +109,14 @@ const ContactForm = ({formdata, setFormData}: ContactFormProps) => {
                     <FormItem>
                     <FormLabel className="text-lg">_message:</FormLabel>
                     <FormControl>
-                        <Textarea placeholder="Your message here..." {...field} className="w-[400px] h-[160px] p-3 rounded-[8px] bg-[#020618] text-[#90A1B9]"/>
+                        <Textarea placeholder="Your message here..." {...field} className="w-[250px] md:w-[400px] h-[160px] p-3 rounded-[8px] bg-[#020618] text-[#90A1B9]"/>
                     </FormControl>
                     <FormMessage className="text-lg text-red-600 !important"/>
                     </FormItem>
                 )}
                 />
 
-                <Button type="submit" className="max-w-[172px] h-[40px] text-lg px-3 py-[10px] bg-[#FFB86A] rounded-[10px] text-[#020618] hover:bg-[#f7cda0]">submit-message</Button>
+                <Button type="submit" className="max-w-[172px] h-[40px] text-lg px-3 py-[10px] bg-[#FFB86A] rounded-[10px] text-[#020618] hover:bg-[#f7cda0] cursor-pointer">submit-message</Button>
             </form>
       </Form>
         )}

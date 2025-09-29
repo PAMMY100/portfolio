@@ -2,7 +2,7 @@ import React from 'react'
 
 const InterestContent = () => {
   return (
-    <section className='flex flex-col gap-2 font-fira-code p-6 text-[#90A1B9] text-lg'>
+    <section className='text-xs flex flex-col gap-4 md:gap-2 font-fira-code md:p-6 text-[#90A1B9] md:text-lg'>
         <div className='flex gap-5 items-center'>
             <p>1</p>
             <p>/**</p>

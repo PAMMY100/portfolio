@@ -37,16 +37,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${geistMono.variable} ${firaCode.variable} antialiased `}>
-      <ThemeProvider>
         <div className="min-h-screen bg-[#0F172B] dark:bg-gray-900 transition-colors">
-          <ThemeToggle />
           <Header />
-          
             {children}
-          
           <Footer />
-        </div>
-      </ThemeProvider>   
+        </div>  
       </body>
     </html>
   );

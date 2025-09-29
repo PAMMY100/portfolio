@@ -40,6 +40,8 @@ import ratedStars from "@/public/icons/ratedStars.svg";
 import projecttesting from "@/public/icons/projecttesting.svg";
 import projectcode from "@/public/icons/projectcode.svg"
 import direction from "@/public/icons/direction.svg"
+import cv from "@/public/icons/cv.png"
+import close from "@/public/icons/close.png"
 
 export {
     git,
@@ -83,5 +85,7 @@ export {
     ratedStars,
     projectcode,
     projecttesting,
-    direction
+    direction,
+    cv,
+    close
 }
