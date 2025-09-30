@@ -9,7 +9,7 @@ import Image from 'next/image'
 const Projects = () => {
 
   return (
-    <div className='text-[#90A1B9] grid gap-6 sm:grid-cols-2 lg:grid-cols-3 p-10'>
+    <div className='p-5 text-[#90A1B9] grid gap-6 sm:grid-cols-2 lg:grid-cols-3 md:p-14'>
         {
             testingProject.map((data) => (
                 <div key={data.name} className='bg-[#020618] rounded-2xl overflow-hidden shadow-lg'>
