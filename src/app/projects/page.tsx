@@ -7,7 +7,7 @@ import { useState } from "react";
 
 type Tab = 'development' | 'testing'
 
-const page = () => {
+const Page = () => {
     const [tab, setTab] = useState<Tab>('development')
 
     const renderComponent = () => {
@@ -34,4 +34,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

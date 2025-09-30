@@ -1,14 +1,12 @@
 'use client'
 import React from 'react'
-import ContactForm from './ContactForm'
-import { set } from 'zod';
 
 type Props = {
     showConfirmation: boolean;
     setShowConfirmation : (value: boolean) => void;
 }
 
-const MessageConfirmation = ({showConfirmation, setShowConfirmation}: Props) => {
+const MessageConfirmation = () => {
 
     const openForm = () => {
         // setShowConfirmation(false);

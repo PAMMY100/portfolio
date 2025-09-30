@@ -1,7 +1,7 @@
 // components/PersonalInfo.tsx
 'use client'
 
-import { arrowDown, bio, circle, codeIcon, education, interest, lastIcon, message, phone, rightArrow, cv } from '@/public/Icon'
+import { arrowDown, bio, circle, codeIcon, interest, lastIcon, message, phone, rightArrow, cv } from '@/public/Icon'
 import Image from 'next/image'
 import React from 'react'
 

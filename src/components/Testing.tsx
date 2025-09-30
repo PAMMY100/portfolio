@@ -4,7 +4,7 @@
 import React from 'react'
 import { testingProject } from '@/constant'
 import Image from 'next/image'
-import { direction } from '@/public/Icon'
+
 
 const Projects = () => {
 

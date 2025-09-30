@@ -2,8 +2,6 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
-import Image from 'next/image'
-import { close } from '@/public/Icon'
 
 const Header = () => {
   const pathName = usePathname()

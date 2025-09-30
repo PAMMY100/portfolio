@@ -11,7 +11,6 @@ import { Button } from "@/components/ui/button"
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -19,7 +18,6 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { set } from "zod";
 import { useEffect, useState } from "react";
 import MessageConfirmation from "./MessageConfirmation";
 import { sendEmail } from "@/lib/resend";
@@ -30,7 +28,7 @@ type ContactFormProps = {
 }
 
 
-const ContactForm = ({formdata, setFormData}: ContactFormProps) => {
+const ContactForm = ({setFormData}: ContactFormProps) => {
     const [showConfirmation, setShowConfirmation] = useState<boolean>(false)
 
     const form = useForm<ContactFormData>({
@@ -71,7 +69,7 @@ const ContactForm = ({formdata, setFormData}: ContactFormProps) => {
 
     return (
         <>
-        {showConfirmation ? ( <MessageConfirmation showConfirmation={showConfirmation} setShowConfirmation={setShowConfirmation}/> ) : (
+        {showConfirmation ? ( <MessageConfirmation /> ) : (
             <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="p-6 space-y-8">
                 <FormField

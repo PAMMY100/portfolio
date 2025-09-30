@@ -104,7 +104,7 @@ const HeroText = () => {
               <span className="dark:text-white"> = {' '}</span>
               <Link href="https://github.com/PAMMY100">
                 <span className="text-[#FFA1AD]">
-                  "https://github.com/PAMMY100"
+                  &quot;https://github.com/PAMMY100&quot;
                 </span>
               </Link>
             </p>
