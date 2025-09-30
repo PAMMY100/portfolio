@@ -13,11 +13,11 @@ const MessageConfirmation = ({setShowConfirmation}: Props) => {
     }
 
   return (
-    <div className='flex flex-col justify-center items-center gap-5'>
+    <div className='p-5 flex flex-col justify-center items-center gap-5'>
         <div>
-            <h1 className='text-[40px] font-semibold text-white mb-5'>Thank you!  <span className='text-[40px] mr-4'>🤘</span></h1>
-            <p className='text-[#90A1B9] text-[25px] mb-2'>Your message has been accepted</p>
-            <p className='text-[#90A1B9] text-[25px] mb-2'>You will receive answer soon</p>
+            <h1 className='text-[20px] md:text-[40px] font-semibold text-white mb-5'>Thank you!  <span className='text-[40px] mr-1 md:mr-4'>🤘</span></h1>
+            <p className='text-[15px] text-[#90A1B9] md:text-[25px] mb-2'>Your message has been accepted</p>
+            <p className='text-[15px] text-[#90A1B9] md:text-[25px] mb-2'>You will receive answer soon</p>
         </div>
         
         <button className='w-[200px] h-[40px] rounded-[10px] p-3 text-[#020618] bg-[#FFB86A] hover:bg-[#ffc689]' onClick={openForm}>Send-new-message</button>
