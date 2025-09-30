@@ -69,7 +69,7 @@ const ContactForm = ({setFormData}: ContactFormProps) => {
 
     return (
         <>
-        {showConfirmation ? ( <MessageConfirmation /> ) : (
+        {showConfirmation ? ( <MessageConfirmation setShowConfirmation={setShowConfirmation} /> ) : (
             <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="p-6 space-y-8">
                 <FormField

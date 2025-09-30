@@ -2,14 +2,14 @@
 import React from 'react'
 
 type Props = {
-    showConfirmation: boolean;
+    // showConfirmation: boolean;
     setShowConfirmation : (value: boolean) => void;
 }
 
-const MessageConfirmation = () => {
+const MessageConfirmation = ({setShowConfirmation}: Props) => {
 
     const openForm = () => {
-        // setShowConfirmation(false);
+        setShowConfirmation(false);
     }
 
   return (
