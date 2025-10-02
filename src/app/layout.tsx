@@ -4,10 +4,9 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-
 const inter = Inter({
   variable: "--font-inter",
-  display: 'swap',
+  display: "swap",
   subsets: ["latin"],
 });
 
@@ -17,10 +16,10 @@ const geistMono = Geist_Mono({
 });
 
 const firaCode = Fira_Code({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-fira-code',
-})
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-fira-code",
+});
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -34,12 +33,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${geistMono.variable} ${firaCode.variable} antialiased `}>
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+      </head>
+      <body className={`${inter.variable} ${geistMono.variable} ${firaCode.variable} antialiased`}>
         <div className="min-h-screen bg-[#0F172B] dark:bg-gray-900 transition-colors">
           <Header />
-            {children}
+          {children}
           <Footer />
-        </div>  
+        </div>
       </body>
     </html>
   );
