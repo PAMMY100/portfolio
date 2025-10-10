@@ -42,6 +42,7 @@ import projectcode from "@/public/icons/projectcode.svg"
 import direction from "@/public/icons/direction.svg"
 import cv from "@/public/icons/cv.png"
 import close from "@/public/icons/close.png"
+import playwright from "@/public/icons/playwright.svg"
 
 export {
     git,
@@ -87,5 +88,6 @@ export {
     projecttesting,
     direction,
     cv,
-    close
+    close,
+    playwright
 }

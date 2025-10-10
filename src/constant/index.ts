@@ -1,4 +1,4 @@
-import { android, appium, apple, code, concept, cypress, design, github, idea, javascript, mongodb, nextjs, postgresql, postman, python, react, selenium, test, testjs, typescript } from "@/public/Icon";
+import { android, appium, apple, code, concept, cypress, design, github, idea, javascript, mongodb, nextjs, postgresql, postman, python, react, playwright, test, testjs, typescript } from "@/public/Icon";
 
 import gather from "@/public/images/gather.jpg";
 import skill2ruraladmin from "@/public/images/skill2rural-admin.png";
@@ -24,7 +24,7 @@ export const languages = [
     {name: "PostgreSQL", icon: postgresql},
     {name: "MongoDB", icon: mongodb},
     {name: "Cypress", icon: cypress},
-    {name: "Selenium", icon: selenium},
+    {name: "Playwright", icon: playwright},
     {name: "Appium", icon: appium},
     {name: "Android", icon: android},
     {name: "Apple", icon: apple},
@@ -35,13 +35,6 @@ export const languages = [
 
 
 export const projectsData = [
-    {
-        "name": "Skill2Rural Platform",
-        "description": "Educational platform bridging opportunities and transforming lives with comprehensive learning management system.",
-        "stack": "Next.js, TypeScript, Restful APIs, Tanstack query",
-        "img": skill2rural,
-        "url": "https://skill2rural.org/"
-    },
     {
         "name": "Skill2Rural Admin Dashboard",
         "description": "Comprehensive admin dashboard with analytics, user management, and real-time data visualization.",
@@ -70,8 +63,15 @@ export const testingProject = [
     {
         "name": "Harambee",
         "description": "Harambee is a mobile and web platform connecting childcare providers with families, enabling registration, verification, availability scheduling, service bookings, communication, and learning/certification.",
-        "stack": "Postman, Appium, K6, browserStack",
+        "stack": "Postman, Playwright, Android Studio, K6, Manual Testing, User Acceptance Testing (UAT), Test Design & Implementation",
         "img": harambee,
         "url": "https://myharambee.com/"
-    }
+    },
+    {
+        "name": "Skill2Rural Platform",
+        "description": "Educational platform bridging opportunities and transforming lives with comprehensive learning management system.",
+        "stack": "Next.js, Cypress, Postman, Manual Testing, User Acceptance Testing (UAT)",
+        "img": skill2rural,
+        "url": "https://skill2rural.org/"
+    },
 ]
