@@ -97,7 +97,7 @@ const LanguageIcons = () => {
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-fit grid grid-cols-3 gap-3 z-20 cursor-none" // hide cursor
+      className="relative w-full h-fit grid grid-cols-3 gap-3 z-20 cursor-none p-8" // hide cursor
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
     >
