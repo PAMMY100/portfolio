@@ -62,7 +62,7 @@ const PersonalInfo = ({ setTab, currentTab }: Props) => {
 
         <div>
           <div className='p-3'>
-            <button className='text-[11px] font-bold mb-0 sm:mb-4 flex items-center gap-2 text-left md:text-lg' onClick={handleDownloadCv}>
+            <button className='text-[11px] font-bold mb-0 sm:mb-3 flex items-center gap-2 text-left md:text-lg' onClick={handleDownloadCv}>
               <Image src={rightArrow} alt='arrow Icon' className='hidden md:block' />
               <Image src={cv} alt='cv Icon' width={20} height={20} className='hidden md:block'/>
                <span>Download CV</span>
