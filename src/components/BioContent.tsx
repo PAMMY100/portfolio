@@ -25,7 +25,7 @@ const BioContent = () => {
         </div>
         <div className='flex gap-7 items-center'>
             <p>6</p>
-            <p>{'*'} Skilled in Cypress, Jest, and Postman</p>
+            <p>{'*'} Skilled in Playwright, Cypress, Jest, and Postman</p>
         </div>
         <div className='flex gap-7 items-center'>
             <p>7</p>
@@ -37,7 +37,7 @@ const BioContent = () => {
         </div>
         <div className='flex gap-7 items-center'>
             <p>9</p>
-            <p>{'*'} Load/stress testing with JMeter & Artillery</p>
+            <p>{'*'} Load/stress testing with K6 & JMeter</p>
         </div >
         <div className='flex gap-5 items-center'>
             <p>10</p>
@@ -45,7 +45,7 @@ const BioContent = () => {
         </div>
         <div className='flex gap-5 items-center'>
             <p>11</p>
-            <p>{'*'} CI/CD integration using Jenkins & GitHub Actions</p>
+            <p>{'*'} CI/CD integration using GitHub Actions</p>
         </div>
         <div className='flex gap-5 items-center'>
             <p>12</p>
@@ -53,7 +53,7 @@ const BioContent = () => {
         </div>
         <div className='flex gap-5 items-center'>
             <p>13</p>
-            <p>{'*'} Database skills: MongoDB, MySQL, SQL Server</p>
+            <p>{'*'} Database skills: MongoDB, MySQL, Postgresql</p>
         </div>
         <div className='flex gap-5 items-center'>
             <p>14</p>
